@@ -1,0 +1,156 @@
+@import url('aside.css');
+@import url('map.css');
+@import "all.min.css";
+
+:root {
+  --blue-color: #5095EC;
+  --black-color: #505050;
+  --secondary-color: #8F8F8F;
+  --grey-color: #D3D8DE;
+  --bg-color: #F1F1F1;
+  --white-color: #FFFFFF;
+	--secondary-bg-color: #FAFAFA;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	color: var(--black-color);
+	font-size: 14px;
+	line-height: 16.41px;
+	width: 100vw;
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	gap: 1rem;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	gap: 16px;
+
+}
+
+a {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 21.09px;
+}
+
+
+section {
+	display: flex;
+	gap: 32px;
+	background-color: var(--bg-color);
+	padding: 32px;
+}
+
+article {
+	width: 80%;
+	/* max-width: 1080px; */
+	background-color: var( --white-color);
+	padding: 56px 32px 32px;
+}
+
+img {
+	width: 100%;
+}
+
+select {
+	background-color: inherit;
+	border: none;
+}
+
+.nav__profile {
+	background-color: var(--white-color);
+	flex-wrap: nowrap;
+	padding: 21.5px 32px;
+
+}
+.nav__profile_title {
+	display: flex;
+	width: 100%;
+}
+
+.nav__profile_title h3 {
+	font-weight: 500;
+}
+
+.nav__profile_title span {
+	font-size: 18px;
+	line-height: 21.09px;
+}
+
+.nav__profile ul {
+	width: 100%;
+	justify-content: end;
+}
+
+.nav__profile_ul {
+	width: 100%;
+	justify-content: end;
+} 
+
+.nav__profile ul a {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__profile ul li a i {
+	font-size: 16px;
+	color: var(--blue-color);
+}
+
+
+.nav__profile_menu {
+	flex-wrap: nowrap;
+	background-color: var(--secondary-bg-color);
+	padding: 12px 32px;
+}
+
+.article__img {
+	padding-bottom: 16px;
+}
+article a {
+	color: var(--blue-color);
+}
+
+article a i {
+	color: var(--black-color);
+} 
+
+.article__text {
+	border-left: 1px solid var(--grey-color);
+}
+.article__text p {
+	margin: 16px 8px;
+}
+.article__text p:last-child {
+	color: var(--secondary-color);
+}
+.article__info {
+	display: flex;
+	gap: 32px;
+	line-height: 18.75px
+}
