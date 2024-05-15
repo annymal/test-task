@@ -1,0 +1,48 @@
+
+.nav__profile {
+	background-color: var(--white-color);
+	flex-wrap: nowrap;
+	padding: 21.5px 32px;
+
+}
+.nav__profile_title {
+	display: flex;
+	width: 100%;
+}
+
+.nav__profile_title h3 {
+	font-weight: 500;
+}
+
+.nav__profile_title span {
+	font-size: 18px;
+	line-height: 21.09px;
+}
+
+.nav__profile ul {
+	width: 100%;
+	justify-content: end;
+}
+
+.nav__profile_ul {
+	width: 100%;
+	justify-content: end;
+} 
+
+.nav__profile ul a {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav__profile ul li a i {
+	font-size: 16px;
+	color: var(--blue-color);
+}
+
+
+.nav__profile_menu {
+	flex-wrap: nowrap;
+	background-color: var(--secondary-bg-color);
+	padding: 12px 32px;
+}

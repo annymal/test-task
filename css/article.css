@@ -1,0 +1,25 @@
+.article__img {
+	padding-bottom: 16px;
+}
+article a {
+	color: var(--blue-color);
+}
+
+article a i {
+	color: var(--black-color);
+} 
+
+.article__text {
+	border-left: 1px solid var(--grey-color);
+}
+.article__text p {
+	margin: 16px 8px;
+}
+.article__text p:last-child {
+	color: var(--secondary-color);
+}
+.article__info {
+	display: flex;
+	gap: 32px;
+	line-height: 18.75px
+}

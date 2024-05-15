@@ -1,6 +1,7 @@
 import { getMap } from "./map.js";
 
 export function getLocation () {
+
 // document.getElementById('my_position').onclick = () => {
 //   // showLoader()
 
