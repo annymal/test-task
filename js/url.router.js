@@ -17,6 +17,7 @@ const urlRoutes = {
   '/': '/pages/index.html',
   '/map': '/pages//map.html',
   '/time': '/pages//time.html',
+  '/resume': '/pages/resume.html',
 };
 
 const urlRoute = (event) => {

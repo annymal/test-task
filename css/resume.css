@@ -1,0 +1,38 @@
+.resume__info {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 40px;
+}
+.resume__info h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.resume__info span {
+  color: var(--secondary-color);
+}
+
+.resume__info p {
+  margin-right: 2rem;
+  line-height: 1.75;
+}
+
+.resume__skills {
+  display: flex;
+  gap: 1rem;
+}
+.resume__experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.resume__contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+}
+
+.resume__contacts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

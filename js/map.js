@@ -1,5 +1,4 @@
 export function getMap(position, tooltip) {
-  // текущая позиция, сообщение над позицией
   var map = null; //через let не работает, появляется ошибка
   if (map === null) {
     map = L.map('map').setView(position, 15); // setView - масштаб

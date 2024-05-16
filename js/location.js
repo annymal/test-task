@@ -8,12 +8,6 @@ export function getLocation() {
   // 		enableHighAccuracy : true
   // 	})
   // }
-  const element = document.getElementById('my-element');
-  if (element) {
-    element.onclick = () => {
-      console.log('click');
-    };
-  }
 
   navigator.geolocation.getCurrentPosition(success, error, {
     enableHighAccuracy: true,
