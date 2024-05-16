@@ -1,8 +1,5 @@
 export function getMap(position, tooltip) {
-  var map = null; //через let не работает, появляется ошибка
-  if (map === null) {
-    map = L.map('map').setView(position, 15); // setView - масштаб
-  }
+  const map = L.map('map').setView(position, 15);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution:

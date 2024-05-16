@@ -30,7 +30,7 @@ body {
 
 nav {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 ul {
@@ -96,6 +96,9 @@ img {
 select {
   background-color: inherit;
   border: none;
+}
+i:hover {
+  color: black;
 }
 .social {
   display: flex;

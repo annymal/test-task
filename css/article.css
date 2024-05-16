@@ -1,25 +1,36 @@
 .article__img {
-	padding-bottom: 16px;
+  padding-bottom: 16px;
 }
-article a {
-	color: var(--blue-color);
+.article__title {
+  display: flex;
+  gap: 5px;
+}
+
+.article__title a {
+  color: var(--blue-color);
+}
+.article__title span {
+  color: var(--black-color);
 }
 
 article a i {
-	color: var(--black-color);
-} 
+  color: var(--black-color);
+}
 
 .article__text {
-	border-left: 1px solid var(--grey-color);
+  border-left: 1px solid var(--grey-color);
 }
+
 .article__text p {
-	margin: 16px 8px;
+  margin: 16px 8px;
 }
+
 .article__text p:last-child {
-	color: var(--secondary-color);
+  color: var(--secondary-color);
 }
+
 .article__info {
-	display: flex;
-	gap: 32px;
-	line-height: 18.75px
+  display: flex;
+  gap: 32px;
+  line-height: 18.75px;
 }

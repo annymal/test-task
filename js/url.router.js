@@ -1,6 +1,5 @@
 import { getLocation } from './location.js';
 import { getTime } from './timer.js';
-//не может найти без .js
 
 document.addEventListener('click', (e) => {
   const { target } = e;
@@ -9,6 +8,7 @@ document.addEventListener('click', (e) => {
     return;
   }
   e.preventDefault();
+  e.target.classList.add('active');
   urlRoute();
 });
 
@@ -30,6 +30,18 @@ const urlRoute = (event) => {
 
 const urlLocationHandler = async () => {
   const location = window.location.pathname;
+  const route = urlRoutes[location] || urlRoutes[404];
+  const html = await fetch(route).then((response) => response.text());
+  document.getElementById('content').innerHTML = html;
+
+  // const parser = new DOMParser();
+  // const doc = parser.parseFromString(html, 'text/html');
+  // const timer = doc.getElementById('timer'); //получила здесь таймер
+  // console.log(timer);
+  // if (timer) {
+  //   getTime(timer);
+  // }
+
   if (location.length == 0) {
     location = '/';
   }
@@ -37,18 +49,7 @@ const urlLocationHandler = async () => {
     getLocation();
   }
   if (location === '/time') {
-    // getTime();
-  }
-  const route = urlRoutes[location] || urlRoutes[404];
-  const html = await fetch(route).then((response) => response.text());
-  document.getElementById('content').innerHTML = html;
-
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, 'text/html');
-  const timer = doc.getElementById('timer'); //получила здесь таймер
-  console.log(timer);
-  if (timer) {
-    getTime(timer);
+    getTime();
   }
 };
 

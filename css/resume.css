@@ -21,6 +21,10 @@
   display: flex;
   gap: 1rem;
 }
+.resume__skills h3 {
+  background-color: rgb(223, 223, 81);
+  padding: 5px;
+}
 .resume__experience {
   display: flex;
   flex-direction: column;
