@@ -1,3 +1,5 @@
+
+import { toggleDropdown } from './index.js';
 import { getLocation } from './location.js';
 import { getTime } from './timer.js';
 
@@ -34,16 +36,9 @@ const urlLocationHandler = async () => {
   const html = await fetch(route).then((response) => response.text());
   document.getElementById('content').innerHTML = html;
 
-  // const parser = new DOMParser();
-  // const doc = parser.parseFromString(html, 'text/html');
-  // const timer = doc.getElementById('timer'); //получила здесь таймер
-  // console.log(timer);
-  // if (timer) {
-  //   getTime(timer);
-  // }
-
   if (location.length == 0) {
     location = '/';
+    
   }
   if (location === '/map') {
     getLocation();
@@ -51,8 +46,12 @@ const urlLocationHandler = async () => {
   if (location === '/time') {
     getTime();
   }
+  if (location == '/') {
+    toggleDropdown()  
+  }
 };
 
 window.onpopstate = urlLocationHandler; //когда пользователь переходит по истории браузера
 window.route = urlRoute;
 urlLocationHandler();
+

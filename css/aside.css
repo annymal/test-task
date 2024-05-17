@@ -1,6 +1,5 @@
 aside {
   width: 20%;
-  /* width: 264px; */
   padding: 50px, 32px, 50px;
   display: flex;
   flex-direction: column;
@@ -34,32 +33,47 @@ aside {
 .sidebar__profile_info span {
   color: var(--secondary-color);
 }
+/* second aside nav */
+.sidebar__wrapper nav {
+  flex-direction: column;
+}
+.nav__header button {
+  border: none;
+  background: inherit;
+}
+.nav__header h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
 
-.share-title {
+.nav__header {
   padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--grey-color);
 }
-.share-block ul {
-  flex-direction: column;
-  gap: 20px;
+
+.nav__main {
+  border-bottom: 1px solid var(--grey-color);
 }
-.share-block ul li {
-  padding: 16px 0px 0px 16px;
+.nav__main a:last-child{
+  padding-bottom: 20px;
 }
-.share-block a {
-  gap: 20px;
+.sidebar__wrapper nav a {
+  padding: 20px 0px 0px 20px;
+}
+.nav__footer a:last-child{
+  padding-bottom: 20px;
 }
 
-.share-block h4 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-}
+/* third aside nav */
 .input-block {
-  padding: 8px 16px;
+  padding: 8px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .input-block textarea {
@@ -70,11 +84,10 @@ aside {
   border-radius: 4px;
   font-family: inherit;
   line-height: 20px;
-  color: var(--grey-color);
+  color: var(--black-color);
 }
 
 .input-block button {
-  margin-top: 8px;
   width: 100%;
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -82,3 +95,9 @@ aside {
   padding: 8px 20px;
   border: none;
 }
+.none {
+  display: none;
+}
+
+
+

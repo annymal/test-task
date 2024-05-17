@@ -27,7 +27,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 nav {
   display: flex;
   /* gap: 1rem; */
@@ -67,7 +66,8 @@ section {
 }
 
 article {
-  width: 80%;
+  height: fit-content;
+  /* width: 80%; */
   /* max-width: 1080px; */
   background-color: var(--white-color);
   padding: 56px 32px 32px;

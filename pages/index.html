@@ -8,34 +8,44 @@
   </head>
   <body>
     <section>
-      <article>
-        <div class="article__img">
-          <img src="/img/abstract-purple.png" alt="purple.png" />
-        </div>
-        <p class="article__title">
-          <a href="#"><i class="fa-regular fa-message"></i>Jason Anderson </a>
-          <span>commented:</span>
-        </p>
-        <div class="article__text">
-          <p
-            >Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea.
-            Keep love in your heart. A life without it is like a sunless garden when the flowers are
-            dead. Because summer is passion, memories, light breeze, the sun that appears on the
-            skin and caresses the face.</p
-          >
-          <p>– Jason, 10:30 am</p>
-        </div>
-        <div class="article__info">
-          <a href="#">
-            <i class="fa-regular fa-eye"></i>
-            432</a
-          >
-          <a href="#">
-            <i class="fa-regular fa-comment"></i>
-            47</a
-          >
-        </div>
-      </article>
+      <div class="main__content">
+        <article>
+          <div class="article__img">
+            <img src="/img/abstract-purple.png" alt="purple.png" />
+          </div>
+          <p class="article__title">
+            <a href="#"><i class="fa-regular fa-message"></i>Jason Anderson </a>
+            <span>commented:</span>
+          </p>
+          <div class="article__text">
+            <p
+              >Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea.
+              Keep love in your heart. A life without it is like a sunless garden when the flowers
+              are dead. Because summer is passion, memories, light breeze, the sun that appears on
+              the skin and caresses the face.</p
+            >
+            <p>– Jason, 10:30 am</p>
+          </div>
+          <div class="article__info">
+            <a href="#">
+              <i class="fa-regular fa-eye"></i>
+              432</a
+            >
+            <a href="#">
+              <i class="fa-regular fa-comment"></i>
+              47</a
+            >
+          </div>
+        </article>
+
+        <article>
+          <h4>Sunset Sunset Sunset</h4>
+          <span>53 minutes ago</span>
+          <button id="navigationBtn"
+            ><i id="navigationIcon" class="fa-solid fa-angle-up fa-xl"></i
+          ></button>
+        </article>
+      </div>
       <aside>
         <div class="sidebar__wrapper">
           <div class="sidebar__profile_info">
@@ -54,45 +64,40 @@
           </div>
         </div>
         <div class="sidebar__wrapper">
-          <div class="share-block">
-            <div class="share-title">
+          <nav>
+            <div class="nav__header">
               <h4>Navigation</h4>
-              <i class="fa-solid fa-angle-down fa-xl"></i>
+              <button id="navigationBtn"
+                ><i id="navigationIcon" class="fa-solid fa-angle-up fa-xl"></i
+              ></button>
             </div>
-            <nav>
-              <ul>
-                <li
-                  ><a href="#"><i class="fa-regular fa-user"></i>My profile</a></li
-                >
-                <li
-                  ><a href="#"><i class="fa-solid fa-coins"></i>Balance</a></li
-                >
-                <li
-                  ><a href="#"><i class="fa-solid fa-wifi"></i>Connections</a></li
-                >
-                <li
-                  ><a href="#"><i class="fa-solid fa-user-group"></i>Friends</a></li
-                >
-                <li
-                  ><a href="#"><i class="fa-regular fa-calendar"></i>Events</a></li
-                >
-                <li
-                  ><a href="#"><i class="fa-solid fa-gear"></i>Account settings</a></li
-                >
-              </ul>
-            </nav>
-          </div>
+            <div id="navigationMenu">
+              <div class="nav__main">
+                <a href="#"><i class="fa-regular fa-user"></i>My profile</a>
+                <a href="#"><i class="fa-solid fa-coins"></i>Balance</a>
+                <a href="#"><i class="fa-solid fa-wifi"></i>Connections</a>
+                <a href="#"><i class="fa-solid fa-user-group"></i>Friends</a>
+              </div>
+              <div class="nav__footer">
+                <a href="#"><i class="fa-regular fa-calendar"></i>Events</a>
+                <a href="#"><i class="fa-solid fa-gear"></i>Account settings</a>
+              </div>
+            </div>
+          </nav>
         </div>
         <div class="sidebar__wrapper">
-          <div class="share-block">
-            <div class="share-title">
+          <nav>
+            <div class="nav__header">
               <h4>Share your thoughts</h4>
+              <button id="textareaBtn"
+                ><i id="textareaIcon" class="fa-solid fa-angle-up fa-xl"></i
+              ></button>
             </div>
-            <div class="input-block">
+            <div id="input-block" class="input-block">
               <textarea placeholder="Enter your message..."></textarea>
               <button>Save</button>
             </div>
-          </div>
+          </nav>
         </div>
       </aside>
     </section>

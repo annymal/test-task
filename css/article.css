@@ -34,3 +34,10 @@ article a i {
   gap: 32px;
   line-height: 18.75px;
 }
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  flex-direction: column;
+}
