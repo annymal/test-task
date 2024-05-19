@@ -29,7 +29,6 @@ body {
 }
 nav {
   display: flex;
-  /* gap: 1rem; */
 }
 
 ul {
@@ -70,16 +69,12 @@ h3 {
 
 section {
   background-color: var(--bg-color);
-  overflow: auto;
-  height: 100vh;
   padding: 32px;
 }
 
 
 article {
   height: fit-content;
-  /* width: 80%; */
-  /* max-width: 1080px; */
   background-color: var(--white-color);
   padding: 56px 32px 32px;
 }
