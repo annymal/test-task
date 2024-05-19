@@ -26,7 +26,6 @@ const urlRoute = (event) => {
   event = event || window.event;
   event.preventDefault();
   window.history.pushState({}, '', event.target.href);
-  console.log(event.target.href);
   urlLocationHandler();
 };
 

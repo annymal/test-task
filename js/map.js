@@ -8,15 +8,10 @@ export function getMap(position, tooltip) {
 
   // маркер с сообщением
   L.marker(position).addTo(map).bindPopup(tooltip).openPopup();
-  // hideLoader()
+  hideLoader()
 }
 
-// function showLoader() {
-//   var loaderWrapper = document.getElementById('loader-wrapper');
-//   loaderWrapper.style.display = 'block';
-// }
-
-// function hideLoader() {
-//   var loaderWrapper = document.getElementById('loader-wrapper');
-//   loaderWrapper.style.display = 'none';
-// }
+function hideLoader() {
+  var loaderWrapper = document.getElementById('loader-wrapper');
+  loaderWrapper.style.display = 'none';
+}

@@ -55,15 +55,26 @@ h3 {
   font-size: 18px;
   line-height: 21.09px;
 }
-
-section {
+.main__container {
   height: 100vh;
   overflow: auto;
-  display: flex;
-  gap: 32px;
   background-color: var(--bg-color);
   padding: 32px;
 }
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 32px;
+}
+
+
+section {
+  background-color: var(--bg-color);
+  overflow: auto;
+  height: 100vh;
+  padding: 32px;
+}
+
 
 article {
   height: fit-content;
@@ -74,6 +85,7 @@ article {
 }
 
 main {
+  overflow: hidden;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -128,4 +140,64 @@ i:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width:1199px) {
+  .container {
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  }
+  article {
+    padding: 32px 20px 20px;
+  }
+  main h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:769px) {
+  .container {
+  grid-template-columns: 1fr;
+  }
+  .resume__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .input-block button {
+    width: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav__profile_title h3 {
+    display: none;
+  }
+  .main__container {
+    padding: 15px;
+  }
+  #map {
+    max-height: 400px;
+  }
+  .resume__info p {
+    margin-right: 0.5rem;
+    line-height: 1.5;
+  }
+  .resume__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  article:not(:first-child) {
+    padding: 18px 9px;
+  }
+  .nav__profile-second {
+    display: none;
+  }
+}
+
+@media (min-width:1500px) {
+  .input-block {
+    gap: 15px;
+  }
 }

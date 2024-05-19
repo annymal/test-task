@@ -41,3 +41,12 @@ article a i {
   width: 100%;
   flex-direction: column;
 }
+article:not(:first-child) {
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.article__title button {
+ background-color: inherit; 
+ border: none;
+}

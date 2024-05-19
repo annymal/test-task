@@ -1,5 +1,4 @@
 aside {
-  width: 20%;
   padding: 50px, 32px, 50px;
   display: flex;
   flex-direction: column;
@@ -19,8 +18,8 @@ aside {
 }
 
 .sidebar__profile_info img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -70,6 +69,8 @@ aside {
 
 /* third aside nav */
 .input-block {
+  align-items: center;
+  justify-content: center;
   padding: 8px 16px 16px 16px;
   display: flex;
   flex-direction: column;
@@ -94,6 +95,9 @@ aside {
   border-radius: 4px;
   padding: 8px 20px;
   border: none;
+}
+.input-block button:hover {
+  background-color: #5e9cea;
 }
 .none {
   display: none;
