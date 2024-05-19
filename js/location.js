@@ -23,35 +23,8 @@ export function getLocation() {
   btn.addEventListener('click', () => {
     watchLocation()
 })
-
-let watchId = null
-
-  function watchLocation() {
-    // getMap([0,0])
-    if (watchId !== null) {
-      console.log('clear')
-      navigator.geolocation.clearWatch(watchId)
-      watchId = null
-    }
-       watchId = navigator.geolocation.watchPosition(({coords}) => {
-        const { latitude, longitude } = coords;
-        const updatePosition = [latitude, longitude];
-        console.log(updatePosition)
-        getMap(updatePosition, 'Update, You are here');
-        console.log('call getMap')
-       },
-       (error) => {
-        console.error('Ошибка получения геолокации:', error)
-       },
-       {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0
-      }
-      )
-     
-    }
-  }
+ 
+}
 
 function showLoader() {
   var loaderWrapper = document.getElementById('loader-wrapper');

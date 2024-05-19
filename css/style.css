@@ -167,6 +167,9 @@ i:hover {
   .input-block button {
     width: 180px;
   }
+  .nav__profile-second {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -190,9 +193,6 @@ i:hover {
   }
   article:not(:first-child) {
     padding: 18px 9px;
-  }
-  .nav__profile-second {
-    display: none;
   }
 }
 
