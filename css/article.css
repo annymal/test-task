@@ -13,7 +13,7 @@
   color: var(--black-color);
 }
 
-article a i {
+.article__item a i {
   color: var(--black-color);
 }
 

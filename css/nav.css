@@ -2,7 +2,7 @@
 .nav__profile {
   background-color: var(--white-color);
   flex-wrap: nowrap;
-  padding: 21.5px 32px;
+  padding: 22px 32px;
 }
 .nav__profile_title {
   display: flex;
@@ -14,7 +14,7 @@
 
 .nav__profile_title span {
   font-size: 18px;
-  line-height: 21.09px;
+  line-height: 22px;
 }
 .nav__profile ul a {
   flex-direction: column;
