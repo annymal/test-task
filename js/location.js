@@ -7,7 +7,6 @@ export function getLocation() {
 
   function success({ coords }) {
     showLoader()
-    console.log('Ваше текущее местоположение:', coords);
     const { latitude, longitude } = coords;
     const currentPosition = [latitude, longitude];
     // getMap(currentPosition, 'You are here');

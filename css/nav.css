@@ -1,6 +1,6 @@
 /* first header */
 .nav__profile {
-  background-color: var(--white-color);
+  background-color: var(--third-color);
   flex-wrap: nowrap;
   padding: 22px 32px;
 }
@@ -24,7 +24,7 @@
 
 .nav__profile ul li a i {
   font-size: 16px;
-  color: var(--blue-color);
+  color: var(--primary-color);
 }
 
 /* second header */

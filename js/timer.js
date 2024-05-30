@@ -9,7 +9,6 @@ export function getTime() {
     const location = window.location.pathname;
     if (location !== '/time') {
       clearInterval(interval);
-      console.log('clear');
     }
 
     const elapsedTime = new Date().getTime() - parseInt(startTime); // время, прошедшее с начала сеанса

@@ -7,18 +7,18 @@
 }
 
 .article__title a {
-  color: var(--blue-color);
+  color: var(--primary-color);
 }
 .article__title span {
-  color: var(--black-color);
+  color: var(--text-color);
 }
 
 .article__item a i {
-  color: var(--black-color);
+  color: var(--text-color);
 }
 
 .article__text {
-  border-left: 1px solid var(--grey-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .article__text p {
